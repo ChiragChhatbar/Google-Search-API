@@ -62,7 +62,7 @@ def search(query, pages=1, lang='en', void=True):
 
         if html:
             soup = BeautifulSoup(html, "html.parser")
-            lis = soup.findAll("li", attrs={"class": "g"})
+            lis = soup.findAll("div", attrs={"class": "g"})
             
             j = 0
             for li in lis:
